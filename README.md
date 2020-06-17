@@ -12,3 +12,9 @@ It takes 3 parameters:
 i.e. WindowsStress.exe 50 all 20
 
 meaning stress to 50% usage for all cores for 20 seconds.
+
+Start as the servie: 
+sc create WindowsStressService binPath= "C:\Application\WindowsStressService\WindowsStressService.exe" DisplayName= "WindowsStressService" start= delayed-auto
+
+Delete:
+sc delete WindowsStressService
